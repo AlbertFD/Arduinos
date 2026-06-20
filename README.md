@@ -16,7 +16,7 @@ A collection of Arduino sketches by Albert Forsyth. Each project lives in its ow
 | [motor](motor/) | Switch-controlled DC motor on/off. |
 | [Zoetrope](Zoetrope/) | Variable-speed, reversible DC motor via an H-bridge, with on/off and direction buttons and a speed pot. |
 | [Keyboard](Keyboard/) | Four-key musical keyboard using a resistor-ladder of buttons on one analog pin. |
-| [Crystalball](Crystalball/) | Magic 8-Ball on a 16x2 LCD — press the button for one of eight random replies. |
+| [Crystalball](Crystalball/) | Magic 8-Ball on a 16x2 LCD — tilt the switch for one of eight random replies. |
 
 ## Usage
 

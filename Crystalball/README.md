@@ -1,10 +1,10 @@
 # Crystalball
 
-A Magic 8-Ball on an LCD. Press the button to "ask the crystal ball" a question, and it shows one of eight random replies on a 16x2 character display.
+A Magic 8-Ball on an LCD. Tilt the crystal ball to "ask" a question, and it shows one of eight random replies on a 16x2 character display.
 
 ## Behavior
 
-On power-up the display reads `Ask the / Crystal Ball!`. Each time the button is pressed, the sketch picks a random number 0–7 and prints `The ball says:` on the top row with the matching answer below:
+On power-up the display reads `Ask the / Crystal Ball!`. Each time the tilt switch changes state (when you tilt it), the sketch picks a random number 0–7 and prints `The ball says:` on the top row with the matching answer below:
 
 | # | Reply |
 |---|-------|
@@ -17,13 +17,13 @@ On power-up the display reads `Ask the / Crystal Ball!`. Each time the button is
 | 6 | Doubtful |
 | 7 | No |
 
-A reply is generated on the press (HIGH→LOW transition), and the code only acts when the switch state changes, so holding the button down won't re-roll repeatedly.
+A reply is generated on the tilt (HIGH→LOW transition), and the code only acts when the switch state changes, so a steady tilt won't re-roll repeatedly.
 
 ## Hardware
 
 - Arduino board
 - 16x2 character LCD (HD44780-compatible), wired in 4-bit mode
-- Pushbutton on pin 6
+- Tilt switch on pin 6
 - 10k potentiometer for LCD contrast, plus the usual backlight/contrast wiring
 
 ## Wiring
@@ -39,11 +39,11 @@ LCD pins are set by `LiquidCrystal lcd(12, 11, 5, 4, 3, 2)`:
 | D6 | 3 |
 | D7 | 2 |
 
-The button connects to **pin 6** (`INPUT`), reading LOW when pressed.
+The tilt switch connects to **pin 6** (`INPUT`), reading LOW when tilted.
 
 ## Usage
 
-Open `Crystalball.ino` in the Arduino IDE, select your board and port, and upload. Requires the `LiquidCrystal` library (bundled in this repo's `libraries/`). Press the button and ask away.
+Open `Crystalball.ino` in the Arduino IDE, select your board and port, and upload. Requires the `LiquidCrystal` library (bundled in this repo's `libraries/`). Tilt the ball and ask away.
 
 ## Note
 
