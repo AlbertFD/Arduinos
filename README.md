@@ -16,6 +16,7 @@ A collection of Arduino sketches by Albert Forsyth. Each project lives in its ow
 | [motor](motor/) | Switch-controlled DC motor on/off. |
 | [Zoetrope](Zoetrope/) | Variable-speed, reversible DC motor via an H-bridge, with on/off and direction buttons and a speed pot. |
 | [Keyboard](Keyboard/) | Four-key musical keyboard using a resistor-ladder of buttons on one analog pin. |
+| [Crystalball](Crystalball/) | Magic 8-Ball on a 16x2 LCD — press the button for one of eight random replies. |
 
 ## Usage
 
@@ -23,5 +24,4 @@ Open any project's `.ino` file in the Arduino IDE, select your board and port, a
 
 ## Repo notes
 
-- `libraries/` — local Arduino libraries.
-- `README` — original storage note (superseded by this file).
+- `libraries/` — local Arduino libraries (includes `LiquidCrystal`, used by Crystalball).
